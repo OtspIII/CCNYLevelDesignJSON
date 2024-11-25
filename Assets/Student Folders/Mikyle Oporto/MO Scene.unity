@@ -490,7 +490,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1704172625}
   - component: {fileID: 1704172624}
-  - component: {fileID: 1704172623}
   m_Layer: 0
   m_Name: Guideline
   m_TagString: Untagged
@@ -498,32 +497,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1704172623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704172622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2541306e9c073048a1ea687fdbceb6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RB: {fileID: 0}
-  Body: {fileID: 0}
-  Coll: {fileID: 0}
-  Anim: {fileID: 0}
-  Health: 0
-  Speed: 5
-  SpinSpeed: 5
-  DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
-  ShootGnome: {fileID: 0}
-  HurtGnome: {fileID: 0}
-  DeathGnome: {fileID: 0}
-  Damage: 1
-  WallHit: 0
 --- !u!212 &1704172624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -585,7 +558,7 @@ Transform:
   m_GameObject: {fileID: 1704172622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.05, y: 0, z: 0}
+  m_LocalPosition: {x: 7.13, y: 3.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

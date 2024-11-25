@@ -181,7 +181,8 @@ public class MikyleMonster : HazardController
             transform.position = Vector3.Lerp(startPos, endPos, timer);
 
             //I can put the Shoot() function in there to create a bullet spawn every second
-            
+            //Shoot();
+
             yield return null;
         }
         
@@ -230,8 +231,7 @@ public class MikyleMonster : HazardController
         Vector3 startPos = transform.position;
 
         //Tracks my position at the end of a segment
-        Vector3 endPos = new Vector3(transform.position.x, transform.position.y + amt);
-
+        Vector3 endPos = new Vector3(transform.position.x, transform.position.y - amt);
         
         //This is an example of a timer used in a coroutine--it'll always take exactly 0.5 seconds
         while (timer < 1)
@@ -239,10 +239,13 @@ public class MikyleMonster : HazardController
             //Note that timer is always a number between 0 and 1--if I want time to pass slow or fast
             //  I just divide or multiple timer by another number to make it change at not-deltaTime
             timer += Time.deltaTime / 0.25f;
-            //I use Lerp to determine how big I should be each frame
 
             //Same deal, but now with position instead of size
             transform.position = Vector3.Lerp(startPos, endPos, timer);
+
+            //I can put the Shoot() function in there to create a bullet spawn every second
+            Shoot();
+            
             yield return null;
         }
     }

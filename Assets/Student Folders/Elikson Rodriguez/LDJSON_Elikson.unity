@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &59340662
 Transform:
   m_ObjectHideFlags: 0
@@ -249,10 +249,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &59340666
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -357,13 +359,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 66182334}
   Speed: 20
 --- !u!1 &92403510
@@ -418,13 +422,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 92403511}
   Speed: 20
 --- !u!1 &119543362
@@ -479,13 +485,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 119543363}
   Speed: 20
 --- !u!1 &143638178
@@ -540,13 +548,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 143638179}
   Speed: 20
 --- !u!1 &175691188
@@ -568,7 +578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &175691189
 Transform:
   m_ObjectHideFlags: 0
@@ -676,10 +686,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &175691193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -824,13 +836,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 188846288}
   Speed: 20
 --- !u!1 &241047720
@@ -885,13 +899,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 241047721}
   Speed: 20
 --- !u!1 &241954582
@@ -946,13 +962,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 241954583}
   Speed: 20
 --- !u!1 &250648087
@@ -974,7 +992,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &250648088
 Transform:
   m_ObjectHideFlags: 0
@@ -1082,10 +1100,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &250648092
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1190,13 +1210,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 279613492}
   Speed: 20
 --- !u!1 &289045682
@@ -1218,7 +1240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &289045683
 Transform:
   m_ObjectHideFlags: 0
@@ -1326,10 +1348,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &289045687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1434,13 +1458,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 313463701}
   Speed: 20
 --- !u!1 &322520253
@@ -1462,7 +1488,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &322520255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1595,10 +1621,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!50 &322520259
 Rigidbody2D:
   serializedVersion: 4
@@ -1645,7 +1673,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &345329455
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,10 +1781,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &345329459
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1861,13 +1891,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 398395009}
   Speed: 20
 --- !u!1 &430738960
@@ -1922,15 +1954,222 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 430738961}
   Speed: 20
+--- !u!1 &512748801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512748807}
+  - component: {fileID: 512748806}
+  - component: {fileID: 512748805}
+  - component: {fileID: 512748804}
+  - component: {fileID: 512748803}
+  - component: {fileID: 512748802}
+  m_Layer: 8
+  m_Name: Fake Monster (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &512748802
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &512748803
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &512748804
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &512748805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 512748803}
+  Body: {fileID: 512748806}
+  Coll: {fileID: 512748802}
+  Anim: {fileID: 512748804}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &512748806
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &512748807
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512748801}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.75, y: -3.5, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &604629244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2023,13 +2262,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 617809523}
   Speed: 20
 --- !u!1 &624263306
@@ -2084,13 +2325,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 624263307}
   Speed: 20
 --- !u!1 &627143929
@@ -2145,13 +2388,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 627143930}
   Speed: 20
 --- !u!1 &631893567
@@ -2206,13 +2451,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 631893568}
   Speed: 20
 --- !u!1 &641550359
@@ -2234,7 +2481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641550360
 Transform:
   m_ObjectHideFlags: 0
@@ -2342,10 +2589,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &641550364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2450,13 +2699,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 661972188}
   Speed: 20
 --- !u!1 &663226517
@@ -2478,7 +2729,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &663226518
 Transform:
   m_ObjectHideFlags: 0
@@ -2586,10 +2837,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &663226522
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2642,6 +2895,211 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &706136992
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706136998}
+  - component: {fileID: 706136997}
+  - component: {fileID: 706136996}
+  - component: {fileID: 706136995}
+  - component: {fileID: 706136994}
+  - component: {fileID: 706136993}
+  m_Layer: 8
+  m_Name: Fake Monster (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &706136993
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &706136994
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &706136995
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &706136996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 706136994}
+  Body: {fileID: 706136997}
+  Coll: {fileID: 706136993}
+  Anim: {fileID: 706136995}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &706136997
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &706136998
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706136992}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.75, y: 0, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744600580
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,13 +3152,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 744600581}
   Speed: 20
 --- !u!1 &786525593
@@ -2755,13 +3215,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 786525594}
   Speed: 20
 --- !u!1 &803768047
@@ -2816,13 +3278,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 803768048}
   Speed: 20
 --- !u!1 &803777118
@@ -2844,7 +3308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &803777119
 Transform:
   m_ObjectHideFlags: 0
@@ -2952,10 +3416,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &803777123
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3060,13 +3526,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 823584802}
   Speed: 20
 --- !u!1 &848252677
@@ -3121,13 +3589,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 848252678}
   Speed: 20
 --- !u!1 &851924377
@@ -3149,7 +3619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &851924378
 Transform:
   m_ObjectHideFlags: 0
@@ -3257,10 +3727,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &851924382
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3365,13 +3837,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 874804002}
   Speed: 20
 --- !u!1 &911120643
@@ -3426,13 +3900,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 911120644}
   Speed: 20
 --- !u!1 &931528354
@@ -3487,13 +3963,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 931528355}
   Speed: 20
 --- !u!1 &986051582
@@ -3515,7 +3993,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &986051583
 Transform:
   m_ObjectHideFlags: 0
@@ -3623,10 +4101,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &986051587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3698,7 +4178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1063131001
 Transform:
   m_ObjectHideFlags: 0
@@ -3806,10 +4286,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1063131005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3914,13 +4396,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1076500156}
   Speed: 20
 --- !u!1 &1114193563
@@ -3942,7 +4426,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1114193564
 Transform:
   m_ObjectHideFlags: 0
@@ -4050,10 +4534,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1114193568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4125,7 +4611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1115828303
 Transform:
   m_ObjectHideFlags: 0
@@ -4233,10 +4719,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1115828307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4341,13 +4829,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1177672321}
   Speed: 20
 --- !u!1 &1189326011
@@ -4402,13 +4892,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1189326012}
   Speed: 20
 --- !u!1 &1277385822
@@ -4430,7 +4922,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1277385823
 Transform:
   m_ObjectHideFlags: 0
@@ -4538,10 +5030,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1277385827
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4646,13 +5140,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1326266877}
   Speed: 20
 --- !u!1 &1332770806
@@ -4707,13 +5203,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1332770807}
   Speed: 20
 --- !u!1 &1352040892
@@ -4735,7 +5233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1352040893
 Transform:
   m_ObjectHideFlags: 0
@@ -4843,10 +5341,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1352040897
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4951,13 +5451,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1370140972}
   Speed: 20
 --- !u!1 &1422636490
@@ -5012,13 +5514,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1422636491}
   Speed: 20
 --- !u!1 &1443108057
@@ -5073,13 +5577,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1443108058}
   Speed: 20
 --- !u!1 &1492479142
@@ -5101,7 +5607,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1492479143
 Transform:
   m_ObjectHideFlags: 0
@@ -5209,10 +5715,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1492479147
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5363,13 +5871,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1550058618}
   Speed: 20
 --- !u!1 &1551757058
@@ -5424,13 +5934,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1551757059}
   Speed: 20
 --- !u!1 &1575733566
@@ -5485,15 +5997,222 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1575733567}
   Speed: 20
+--- !u!1 &1641331003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1641331009}
+  - component: {fileID: 1641331008}
+  - component: {fileID: 1641331007}
+  - component: {fileID: 1641331006}
+  - component: {fileID: 1641331005}
+  - component: {fileID: 1641331004}
+  m_Layer: 8
+  m_Name: Fake Monster (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1641331004
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &1641331005
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &1641331006
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1641331007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 1641331005}
+  Body: {fileID: 1641331008}
+  Coll: {fileID: 1641331004}
+  Anim: {fileID: 1641331006}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &1641331008
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1641331009
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641331003}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.75, y: -3.5, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1679125302
 GameObject:
   m_ObjectHideFlags: 0
@@ -5513,7 +6232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1679125303
 Transform:
   m_ObjectHideFlags: 0
@@ -5621,10 +6340,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1679125307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5696,7 +6417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1679849422
 Transform:
   m_ObjectHideFlags: 0
@@ -5804,10 +6525,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1679849426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5912,13 +6635,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1682843571}
   Speed: 20
 --- !u!1 &1741785046
@@ -5973,13 +6698,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1741785047}
   Speed: 20
 --- !u!1 &1836505697
@@ -6034,13 +6761,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1836505698}
   Speed: 20
 --- !u!1 &1863244907
@@ -6095,13 +6824,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1863244908}
   Speed: 20
 --- !u!1 &1885183646
@@ -6123,7 +6854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1885183647
 Transform:
   m_ObjectHideFlags: 0
@@ -6231,10 +6962,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1885183651
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6306,7 +7039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1886039039
 Transform:
   m_ObjectHideFlags: 0
@@ -6414,10 +7147,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1886039043
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6522,15 +7257,222 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1888365868}
   Speed: 20
+--- !u!1 &1889488822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1889488828}
+  - component: {fileID: 1889488827}
+  - component: {fileID: 1889488826}
+  - component: {fileID: 1889488825}
+  - component: {fileID: 1889488824}
+  - component: {fileID: 1889488823}
+  m_Layer: 8
+  m_Name: Fake Monster (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1889488823
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &1889488824
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &1889488825
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1889488826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 1889488824}
+  Body: {fileID: 1889488827}
+  Coll: {fileID: 1889488823}
+  Anim: {fileID: 1889488825}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &1889488827
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1889488828
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889488822}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.75, y: 3.5, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914219572
 GameObject:
   m_ObjectHideFlags: 0
@@ -6583,13 +7525,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1914219573}
   Speed: 20
 --- !u!1 &1917872873
@@ -6644,13 +7588,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1917872874}
   Speed: 20
 --- !u!1 &1918247168
@@ -6758,13 +7704,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1934171102}
   Speed: 20
 --- !u!1 &1953940938
@@ -6786,7 +7734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1953940939
 Transform:
   m_ObjectHideFlags: 0
@@ -6894,10 +7842,12 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!212 &1953940943
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7002,13 +7952,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1954009678}
   Speed: 20
 --- !u!1 &1954710306
@@ -7109,15 +8061,222 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 1986034288}
   Speed: 20
+--- !u!1 &2003510596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2003510602}
+  - component: {fileID: 2003510601}
+  - component: {fileID: 2003510600}
+  - component: {fileID: 2003510599}
+  - component: {fileID: 2003510598}
+  - component: {fileID: 2003510597}
+  m_Layer: 8
+  m_Name: Fake Monster (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2003510597
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &2003510598
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &2003510599
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2003510600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 2003510598}
+  Body: {fileID: 2003510601}
+  Coll: {fileID: 2003510597}
+  Anim: {fileID: 2003510599}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &2003510601
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2003510602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003510596}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.75, y: 3.5, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078562161
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,6 +8310,211 @@ Transform:
   - {fileID: 1537482795}
   - {fileID: 175949483}
   - {fileID: 604629245}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2105751264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105751270}
+  - component: {fileID: 2105751269}
+  - component: {fileID: 2105751268}
+  - component: {fileID: 2105751267}
+  - component: {fileID: 2105751266}
+  - component: {fileID: 2105751265}
+  m_Layer: 8
+  m_Name: Fake Monster (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &2105751265
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.86, y: 2.86}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.86, y: 2.86}
+  m_EdgeRadius: 0
+--- !u!50 &2105751266
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!95 &2105751267
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2105751268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e6344fa44352174290ddc26eb3dc87a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RB: {fileID: 2105751266}
+  Body: {fileID: 2105751269}
+  Coll: {fileID: 2105751265}
+  Anim: {fileID: 2105751267}
+  Health: 0
+  Speed: 5
+  SpinSpeed: 5
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  AltProjectiles: []
+  ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
+  DeathGnome: {fileID: 0}
+--- !u!212 &2105751269
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: ad73c81035990d04096a7146f98bc29f, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &2105751270
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105751264}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.75, y: 0, z: 0}
+  m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2106978210
@@ -7205,13 +8569,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 2106978211}
   Speed: 20
 --- !u!1 &2130805502
@@ -7266,13 +8632,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 2130805503}
   Speed: 20
 --- !u!1 &2138367580
@@ -7378,7 +8746,7 @@ Transform:
   m_GameObject: {fileID: 2138367580}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.84, y: 3.48, z: 0}
+  m_LocalPosition: {x: 8.75, y: 3.5, z: 0}
   m_LocalScale: {x: 0.3554368, y: 0.3554368, z: 0.3554368}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7401,11 +8769,12 @@ MonoBehaviour:
   Coll: {fileID: 2138367588}
   Anim: {fileID: 2138367583}
   Health: 0
-  Speed: 5
+  Speed: 6
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
 --- !u!61 &2138367588
 BoxCollider2D:
@@ -7531,13 +8900,15 @@ MonoBehaviour:
   Speed: 20
   SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   ProjectilePrefab: {fileID: 4929872375643573239, guid: cd03b75f435c16040996465cb3dd7204, type: 3}
   FastProjectilePrefab: {fileID: 4929872375643573239, guid: a247d2165cf9810428f7310e79b3d12b, type: 3}
   SlowProjectilePrefab: {fileID: 4929872375643573239, guid: 6ea63c514ce47b64e83519533bb8b1bd, type: 3}
   SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   firePoint: {fileID: 2142926897}
   Speed: 20
 --- !u!61 &120225483157326707
@@ -7662,8 +9033,9 @@ MonoBehaviour:
   Speed: 4
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 4943575786287307083, guid: 974a946151c198a4093daeb2d8a9d04b, type: 3}
 --- !u!50 &837640076147317476
 Rigidbody2D:
@@ -7894,6 +9266,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainNPC: {fileID: 2138367587}
+  SideNPCs:
+  - {fileID: 322520258}
+  - {fileID: 641550363}
+  - {fileID: 1679849425}
+  - {fileID: 250648091}
+  - {fileID: 1114193567}
+  - {fileID: 289045686}
+  - {fileID: 803777122}
+  - {fileID: 175691192}
+  - {fileID: 1115828306}
+  - {fileID: 345329458}
+  - {fileID: 1886039042}
+  - {fileID: 59340665}
+  - {fileID: 1277385826}
+  - {fileID: 1352040896}
+  - {fileID: 1492479146}
+  - {fileID: 1063131004}
+  - {fileID: 1885183650}
+  - {fileID: 851924381}
+  - {fileID: 663226521}
+  - {fileID: 1679125306}
+  - {fileID: 1953940942}
+  - {fileID: 986051586}
   JSON: {fileID: 4900000, guid: ce7c35d3e0f20a049a40ab5bc1948baf, type: 3}
   HealthDisplay: {fileID: 3225649181164897085}
   DialogueDisplay: {fileID: 6350601410819105232}
@@ -8985,3 +10380,9 @@ SceneRoots:
   - {fileID: 2078562162}
   - {fileID: 2138367586}
   - {fileID: 1918247169}
+  - {fileID: 1641331009}
+  - {fileID: 2105751270}
+  - {fileID: 2003510602}
+  - {fileID: 512748807}
+  - {fileID: 706136998}
+  - {fileID: 1889488828}

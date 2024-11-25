@@ -10,11 +10,13 @@ MonoImporter:
   - Anim: {instanceID: 0}
   - DefaultProjectile: {instanceID: 0}
   - ShootGnome: {instanceID: 0}
+  - HurtGnome: {instanceID: 0}
   - DeathGnome: {instanceID: 0}
   - ProjectilePrefab: {instanceID: 0}
   - FastProjectilePrefab: {instanceID: 0}
   - SlowProjectilePrefab: {instanceID: 0}
   - SpikyProjectilePrefab: {fileID: 4929872375643573239, guid: 2c4d9d066d5f98b449c699a98e0daae6, type: 3}
+  - MediumProjectilePrefab: {fileID: 4929872375643573239, guid: 59183ac933450d347930f0b442473d90, type: 3}
   - firePoint: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
