@@ -840,6 +840,7 @@
     {"Time": 94, "Dialogue": "Well, this is awkward..."},
     {"Time": 95, "Dialogue": "Oh well..."}, 
     {"Time": 95.5, "Who": "MikyleServant(1)", "Action": "TurnOn"},
+    {"Time": 96, "Dialogue": ""},
     
     {"Time": 97.5, "Who": "MikyleServant(1)", "Action": "RandomTeleport"},
     {"Time": 97.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
@@ -937,42 +938,40 @@
     {"Time": 102, "Who": "MikyleServant(1)", "Action": "HitboxOff"},
     {"Time": 102, "Who": "MikyleServant(2)", "Action": "HitboxOff"},
     
-    {"Time": 105, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 105, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 3},
     
     {"Time": 106, "Who": "MikyleServant(1)","Action": "MoveToX", "Amt": 7},
     {"Time": 106, "Who": "MikyleServant(1)","Action": "MoveToY", "Amt": 4},
 
-    {"Time": 106.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
     {"Time": 107, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 108.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -3},
 
-    {"Time": 108, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -6},
-
-    {"Time": 109, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
     {"Time": 109.5, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
+    {"Time": 109.75, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
     {"Time": 110, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
     {"Time": 110.25, "Who": "MikyleServant(1)", "Action": "ShootAtPlayer"},
 
     {"Time": 111, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
-    {"Time": 112.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
     {"Time": 113, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
 
-    {"Time": 113.25, "Who": "MikyleServant(1)", "Action": "RandomTeleport"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 45},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 90},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 135},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 180},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 225},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 270},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 315},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
-    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 360},
+    {"Time": 113.5, "Who": "MikyleServant(1)", "Action": "RandomTeleport"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 45},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 90},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 135},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 180},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 225},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 270},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 315},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Shoot"},
+    {"Time": 113.75, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 360},
+
 
     {"Time": 114.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
     {"Time": 114.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 45},
@@ -990,6 +989,8 @@
     {"Time": 114.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 315},
     {"Time": 114.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
     {"Time": 114.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 360},
+
+    {"Time": 115, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -4},
     
     {"Time": 115.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
     {"Time": 115.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 45},
@@ -1008,12 +1009,52 @@
     {"Time": 115.5, "Who": "MikyleServant(1)", "Action": "Shoot"},
     {"Time": 115.5, "Who": "MikyleServant(1)", "Action": "Rotate", "Amt": 360},
 
-  {"This is all for now...": "All for now"},
-    {"Time": 120,"Dialogue": "Hello"},
-    {"Time": 120,"Who":"Player","Action": "Flash"},
-    {"Time": 122,"Dialogue": ""},
-    {"Time": 125,"Action": "RandomWalk"},
-    {"Time": 127, "Who": "Player", "Action": "Shake"},
-    {"Time": 130}
+
+    {"Time": 116.5, "Who":"MikyleServant(1)", "Action": "SetX", "Amt": 0},
+    {"Time": 116.5, "Who":"MikyleServant(1)", "Action": "SetY", "Amt": 0},
+    {"Time": 116.5, "Who":"MikyleServant(1)", "Action": "HitboxOn"},
+    {"Time": 116.5, "Who":"MikyleServant(1)", "Anim": "Spinnn"},
+    {"Time": 116.5, "Action": "SetSpeed", "Amt": 2},
+    {"Time": 116.5, "Action": "HitboxOn"},
+    {"Time": 116.5, "Action": "ContinuouslyFollowPlayer"},
+
+    {"Time": 117, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 117.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 118, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -2},
+
+    {"Time": 118.75, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": 0},
+    {"Time": 119, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -2},
+    {"Time": 119.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 120, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -4},
+
+    {"Time": 120.75, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": -4},
+    {"Time": 121, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -2},
+    {"Time": 121.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -2},
+    {"Time": 122, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+
+    {"Time": 122.75, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": 2},
+    {"Time": 123, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+    {"Time": 123.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -1},
+    {"Time": 124, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": -1},
+
+    {"Time": 124.75, "Who": "MikyleServant(2)", "Action": "SetY", "Amt": 0},
+    {"Time": 125, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 1},
+    {"Time": 125.5, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 1},
+    {"Time": 126, "Who": "MikyleServant(2)", "Action": "FullUpDownColumn", "Amt": 2},
+
+    {"Time": 126.5, "Who":"MikyleServant(2)", "Action": "TurnOff"},
+
+    {"Time": 127, "Who": "MikyleServant(1)", "Action": "TurnOff"},
+
+    {"Time": 130,"Dialogue": "Hello"},
+    
+    {"Time": 132,"Dialogue": "I had enough of this..."},
+    {"Time": 134, "Dialogue": "No really. I do.."},
+    
+    {"Time": 136,"Who":"Player","Action": "Flash", "Amt": 4},
+    {"Time": 137, "Dialogue": "Oooo!! So cool!!"},
+    {"Time": 140, "Who": "Player", "Action": "Shake", "Amt": 2},
+
+    {"Time": 145}
   ]
 }

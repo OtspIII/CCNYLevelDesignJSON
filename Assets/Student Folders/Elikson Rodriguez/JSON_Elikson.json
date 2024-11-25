@@ -229,29 +229,32 @@
     {"Time": 10,"Who":"FloorShooter (7)","Action": "ShootProjectile"},
     {"Time": 10,"Who":"FloorShooter (8)","Action": "ShootProjectile"},
 
-    {"Time": 11.3,"Who":"LeftShooter (5)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"LeftShooter (6)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"LeftShooter (7)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"LeftShooter (8)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"LeftShooter (9)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (8)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (9)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (10)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (11)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (12)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (13)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (14)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RoofShooter (15)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RightShooter (1)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RightShooter (2)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RightShooter (3)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"RightShooter (4)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (1)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (2)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (3)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (4)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (5)","Action": "ShootProjectile"},
-    {"Time": 11.3,"Who":"FloorShooter (6)","Action": "ShootProjectile"},
+    
+    {"Time": 11.3,"Who":"HGLaser (3)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"HGLaser (4)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"HGLaser (5)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"HGLaser (8)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (1)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (2)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (6)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (7)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (8)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (9)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (10)","Action": "TurnOn"},
+    {"Time": 11.3,"Who":"VGLaser (14)","Action": "TurnOn"},
+    
+    {"Time": 11.3,"Who":"HGLaser (3)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"HGLaser (4)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"HGLaser (5)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"HGLaser (8)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (1)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (2)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (6)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (7)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (8)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (9)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (10)","Action": "HitboxOff", "Amt": 0.1},
+    {"Time": 11.3,"Who":"VGLaser (14)","Action": "HitboxOff", "Amt": 0.1},
 
     {"Time": 11.52,"Who":"HoriLaser (3)","Action": "TurnOn"},
     {"Time": 11.52,"Who":"HoriLaser (4)","Action": "TurnOn"},
@@ -266,6 +269,20 @@
     {"Time": 11.52,"Who":"VertLaser (10)","Action": "TurnOn"},
     {"Time": 11.52,"Who":"VertLaser (14)","Action": "TurnOn"},
     {"Time": 11.52,"Who":"Fake Monster (5)","Action": "Shake", "Amt": 0.45},
+
+
+    {"Time": 11.52,"Who":"HGLaser (3)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"HGLaser (4)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"HGLaser (5)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"HGLaser (8)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (1)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (2)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (6)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (7)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (8)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (9)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (10)","Action": "FadeOut", "Amt": 0.3},
+    {"Time": 11.52,"Who":"VGLaser (14)","Action": "FadeOut", "Amt": 0.3},
 
     {"Time": 12.02,"Who":"HoriLaser (3)","Action": "FadeOut", "Amt": 0.5},
     {"Time": 12.02,"Who":"HoriLaser (3)","Action": "HitboxOff", "Amt": 0.5},
@@ -469,8 +486,6 @@
     {"Time": 28.7,"Who":"RoofShooter (15)","Action": "ShootSpikyProjectile"},
     {"Time": 28.8,"Who":"Fake Monster (6)","Action": "Shake", "Amt": 0.4},
 
-    {"Time": 29.50,"Action": "TurnOn"},
-
     {"Time": 29.79,"Who":"VertLaser (1)","Action": "FadeIn", "Amt": 0.35},
     {"Time": 29.79,"Who":"VertLaser (2)","Action": "FadeIn", "Amt": 0.35},
     {"Time": 29.79,"Who":"VertLaser (3)","Action": "FadeIn", "Amt": 0.35},
@@ -479,9 +494,6 @@
     {"Time": 29.79,"Who":"VertLaser (2)","Action": "HitboxOn", "Amt": 0.45},
     {"Time": 29.79,"Who":"VertLaser (3)","Action": "HitboxOn", "Amt": 0.45},
     {"Time": 29.79,"Who":"VertLaser (4)","Action": "HitboxOn", "Amt": 0.45},
-
-    {"Time": 29.80,"Action": "MoveToX", "Amt": 0},
-    {"Time": 29.80,"Action": "MoveToY", "Amt": 3.5},
 
     {"Time": 29.95,"Who":"VertLaser (6)","Action": "FadeIn", "Amt": 0.35},
     {"Time": 29.95,"Who":"VertLaser (7)","Action": "FadeIn", "Amt": 0.35},
@@ -602,13 +614,13 @@
     {"Time": 35.95,"Who":"FloorShooter (14)","Action": "ShootSpikyProjectile"},
     {"Time": 35.95,"Who":"FloorShooter (15)","Action": "ShootSpikyProjectile"},
 
-    {"Time": 36.33,"Who":"FloorShooter (1)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (2)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (3)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (4)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (5)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (6)","Action": "ShootSpikyProjectile"},
-    {"Time": 36.33,"Who":"FloorShooter (7)","Action": "ShootSpikyProjectile"},    
+    {"Time": 36.25,"Who":"FloorShooter (1)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (2)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (3)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (4)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (5)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (6)","Action": "ShootSpikyProjectile"},
+    {"Time": 36.25,"Who":"FloorShooter (7)","Action": "ShootSpikyProjectile"},    
 
     {"Time": 36.85,"Who":"RoofShooter (1)","Action": "ShootMediumProjectile"},
     {"Time": 36.85,"Who":"RoofShooter (2)","Action": "ShootMediumProjectile"},
@@ -664,7 +676,10 @@
     {"Time": 39.00,"Who":"RightShooter (9)","Action": "ShootSpikyProjectile"},
 
 
+    {"Time": 39.00,"Action": "TurnOn"},
 
+    {"Time": 39.80,"Action": "MoveToX", "Amt": 0},
+    {"Time": 39.80,"Action": "MoveToY", "Amt": 3.5},
 
 
 

@@ -40,6 +40,10 @@ public class MikyleMonster : HazardController
         {
             StartCoroutine(FlashWhite(amt));
         }
+        if (act == "ContinuouslyFollowPlayer")
+        {
+            StartCoroutine(ContinuouslyFollowPlayer());
+        }
     }
 
     //Get big and move to each corner of the screen
@@ -274,5 +278,18 @@ public class MikyleMonster : HazardController
             yield return null;
         }
         Body.color = c;
+    }
+
+    public IEnumerator ContinuouslyFollowPlayer()
+    {
+        float timer = 0;
+        while (timer < 12)
+        {
+            Vector3 pos = PlayerController.Player.transform.position;
+            SetDesiredPos(pos,MoveStyle.Linear);
+
+            timer += Time.deltaTime;
+            yield return null;
+        }
     }
 }

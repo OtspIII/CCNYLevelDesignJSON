@@ -1,14 +1,1455 @@
 {
   "Title": "Example Level",
   "Author": "Example Student",
-  "Events": [
-    {"Time": 0,"Anim": "SpinShoot","Action": "RandomWalk"},
-    {"Time": 2,"Action": "RandomWalk"},
-    {"Time": 4,"Action": "RandomWalk"},
-    {"Time": 5.5,"Action": "Shake", "Amt": 3},
-    {"Time": 8,"Dialogue": "Hello"},
-    {"Time": 8,"Who":"Player","Action": "Flash"},
-    {"Time": 10,"Dialogue": ""},
-    {"Time": 12}
+  "Events":
+  [
+    {
+      "Time": 0,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 1,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 2,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 3,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 4,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 5,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": 3,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 6,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 7,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 8,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 9,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 10,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 11,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 12,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 13,
+      "Anim": "SpinShoot",
+      "Action": "MoveToPlayer",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": "Player"
+    },
+    {
+      "Time": 14,
+      "Anim": "",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 15,
+      "Anim": "",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 16,
+      "Anim": "",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 17,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 18,
+      "Anim": "SpinShoot",
+      "Action": "",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 19,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 20,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 21,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 22,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 23,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 24,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 25,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 26,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 27,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 28,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 29,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 30,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 31,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 32,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 33,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 34,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 35,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 36,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 37,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 38,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 39,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 40,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 41,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 42,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 43,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 44,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 45,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 46,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 47,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 48,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 49,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 50,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 51,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 52,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 53,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 54,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 55,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 56,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 57,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 58,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 59,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 60,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 61,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 62,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 63,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 64,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 65,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 66,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 67,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 68,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 69,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 70,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 71,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 72,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 73,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 74,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 75,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 76,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 77,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 78,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 79,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 80,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 81,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 82,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 83,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 84,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 85,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 86,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 87,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 88,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 89,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 90,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 91,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 92,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 93,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 94,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 95,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 96,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 97,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 98,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 99,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 100,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 101,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 102,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 103,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 104,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 105,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 106,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 107,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 108,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 109,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 110,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 111,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 112,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 113,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 114,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 115,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 116,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 117,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 118,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 119,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 120,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 121,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 122,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 123,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 124,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 125,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 126,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 127,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 128,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 129,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 130,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 131,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 132,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 133,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 134,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 135,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 136,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 137,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 138,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 139,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 140,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 141,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 142,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 143,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 144,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 145,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 146,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 147,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 148,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 149,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 150,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 151,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 152,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 153,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 154,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 155,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 156,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 157,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 158,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 159,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 160,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 161,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 162,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 163,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 164,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 165,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 166,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 167,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 168,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 169,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 170,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 171,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 172,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 173,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 174,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 175,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 176,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 177,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 178,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 179,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    },
+    {
+      "Time": 180,
+      "Anim": "SpinShoot",
+      "Action": "RandomWalk",
+      "Amt": null,
+      "Dialogue": "",
+      "Who": ""
+    }
   ]
 }
