@@ -50,12 +50,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   RB: {fileID: -3541093684125484274}
   Body: {fileID: 3739585348139978228}
+  Coll: {fileID: 0}
   Anim: {fileID: 6628546495624261682}
   Health: 0
+  Speed: 5
+  SpinSpeed: 5
   DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 2
 --- !u!61 &7629057881739277528
 BoxCollider2D:
   m_ObjectHideFlags: 0

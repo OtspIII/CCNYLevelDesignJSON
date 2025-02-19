@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1709854711018145779}
   - component: {fileID: 1709854711018145778}
   - component: {fileID: 1709854711018145781}
-  - component: {fileID: 1709854711018145776}
   m_Layer: 0
   m_Name: HP
   m_TagString: Hazard
@@ -26,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709854711018145780}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03, y: 1.46, z: 0}
-  m_LocalScale: {x: 0.05162495, y: 0.04184294, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1709854711018145778
 SpriteRenderer:
@@ -75,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e4a56c93360590f4ca1a036c3b5785b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 347784e631330d443b10ffd4da9a0a38, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,22 +105,9 @@ MonoBehaviour:
   Speed: 5
   SpinSpeed: 5
   DefaultProjectile: {fileID: 0}
-  ALtProjectiles: []
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
   HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 0
   WallHit: 0
---- !u!65 &1709854711018145776
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1709854711018145780}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2, y: 2, z: 2}
-  m_Center: {x: 0, y: 0, z: 0}

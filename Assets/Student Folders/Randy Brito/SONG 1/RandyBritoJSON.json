@@ -12,7 +12,7 @@
     {"Time": 6.8,"Action": "Shake", "Amt": 3},
     {"Time": 8,"Who":"Player","Action": "Flash"},
     {"Time": 10,"Anim": "SpinShoot","Action": "RandomWalk"},
-    {"Time": 11,"Action": "RandomWalk", "Anim": "idle"},
+    {"Time": 11,"Action": "RandomWalk"},
     {"Time": 12, "Action": "RandomWalk","Anim": "SpinShoot"},
     {"Time": 13,"Anim": "idle", "Action": "RandomWalk"},
     {"Time": 14,"Action": "RandomWalk", "Action": "Shake", "Amt": 3},

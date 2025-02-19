@@ -8,6 +8,7 @@ TagManager:
   - Hazard
   - Projectile
   - Boss_Elikson
+  - Bullet_Killer
   layers:
   - Default
   - TransparentFX

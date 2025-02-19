@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3541093684125484274, guid: 012916fa5a6900943bf0049242bb5db3, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1558863088311700548, guid: 012916fa5a6900943bf0049242bb5db3, type: 3}
       propertyPath: m_Name
       value: Monster Michael R
@@ -298,13 +302,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 775650846862172431, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: Health
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 1323700629660496927, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03261053
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1323700629660496927, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.030051
+      value: -2.83
       objectReference: {fileID: 0}
     - target: {fileID: 1323700629660496927, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_LocalPosition.z

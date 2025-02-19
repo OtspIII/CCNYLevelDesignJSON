@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 30210104}
   m_Layer: 0
   m_Name: RightTurret1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,11 +176,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &30210105
 Animator:
   serializedVersion: 5
@@ -209,7 +211,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30210102}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -299,211 +301,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &70618671
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 70618677}
-  - component: {fileID: 70618676}
-  - component: {fileID: 70618675}
-  - component: {fileID: 70618674}
-  - component: {fileID: 70618673}
-  - component: {fileID: 70618672}
-  m_Layer: 0
-  m_Name: Boss3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &70618672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e4b7af8ccfc53409c2b60883e13b97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RB: {fileID: 70618674}
-  Body: {fileID: 70618676}
-  Coll: {fileID: 0}
-  Anim: {fileID: 70618673}
-  Health: 0
-  Speed: 5
-  SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
-  ShootGnome: {fileID: 0}
-  DeathGnome: {fileID: 0}
-  Damage: 1
---- !u!95 &70618673
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!50 &70618674
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &70618675
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &70618676
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &70618677
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70618671}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &113806162
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,11 +378,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &144661390
 Animator:
   serializedVersion: 5
@@ -614,7 +413,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144661388}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -734,7 +533,7 @@ GameObject:
   - component: {fileID: 144893573}
   m_Layer: 0
   m_Name: UpTurret6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -773,11 +572,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &144893574
 Animator:
   serializedVersion: 5
@@ -806,7 +607,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 144893571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -911,7 +712,7 @@ GameObject:
   - component: {fileID: 212193365}
   m_Layer: 0
   m_Name: DownTurret2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -950,11 +751,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &212193366
 Animator:
   serializedVersion: 5
@@ -983,7 +786,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212193363}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1113,11 +916,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 1
 --- !u!95 &399969656
 Animator:
   serializedVersion: 5
@@ -1331,7 +1136,7 @@ GameObject:
   - component: {fileID: 535619840}
   m_Layer: 0
   m_Name: UpTurret4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1345,7 +1150,7 @@ Transform:
   m_GameObject: {fileID: 535619838}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4362588, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 2.4362588, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1370,11 +1175,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &535619841
 Animator:
   serializedVersion: 5
@@ -1403,7 +1210,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535619838}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1508,7 +1315,7 @@ GameObject:
   - component: {fileID: 802115358}
   m_Layer: 0
   m_Name: DownTurret4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1547,11 +1354,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &802115359
 Animator:
   serializedVersion: 5
@@ -1580,7 +1389,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 802115356}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1718,9 +1527,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: m_Color.b
+      value: 0.43257537
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4263063251411776512, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3206952
+      objectReference: {fileID: 0}
     - target: {fileID: 7444107625801907342, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8683513964615628023, guid: c5d3f2865feff8d40a2b15b440e85123, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1739,6 +1564,10 @@ PrefabInstance:
       propertyPath: JSON
       value: 
       objectReference: {fileID: 4900000, guid: dd487088e8b79c04d9db8a7ee333ee8e, type: 3}
+    - target: {fileID: 2222939923061481438, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
+      propertyPath: Clock
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2222939923061481438, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
       propertyPath: MainNPC
       value: 
@@ -1784,6 +1613,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6988943224843415803, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
+      propertyPath: m_Volume
+      value: 0.173
+      objectReference: {fileID: 0}
+    - target: {fileID: 6988943224843415803, guid: d234da9df56f40d49a2c47c6bc00444a, type: 3}
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: aed8638cadaf9494c9b12771c64713ad, type: 3}
@@ -1821,7 +1654,7 @@ GameObject:
   - component: {fileID: 1098376330}
   m_Layer: 0
   m_Name: RightTurret2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1860,11 +1693,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1098376331
 Animator:
   serializedVersion: 5
@@ -1893,7 +1728,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098376328}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1998,7 +1833,7 @@ GameObject:
   - component: {fileID: 1170996116}
   m_Layer: 0
   m_Name: DownTurret3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2037,11 +1872,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1170996117
 Animator:
   serializedVersion: 5
@@ -2070,7 +1907,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170996114}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2175,7 +2012,7 @@ GameObject:
   - component: {fileID: 1204943613}
   m_Layer: 0
   m_Name: UpTurret3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2189,7 +2026,7 @@ Transform:
   m_GameObject: {fileID: 1204943611}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4362588, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 0.4362588, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2214,11 +2051,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1204943614
 Animator:
   serializedVersion: 5
@@ -2247,7 +2086,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204943611}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2352,7 +2191,7 @@ GameObject:
   - component: {fileID: 1249928446}
   m_Layer: 0
   m_Name: DownTurret6
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2391,11 +2230,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1249928447
 Animator:
   serializedVersion: 5
@@ -2424,7 +2265,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1249928444}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2553,11 +2394,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1411800000
 Animator:
   serializedVersion: 5
@@ -2586,7 +2429,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411799998}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2706,7 +2549,7 @@ GameObject:
   - component: {fileID: 1413579934}
   m_Layer: 0
   m_Name: UpTurret7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2720,7 +2563,7 @@ Transform:
   m_GameObject: {fileID: 1413579932}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.436259, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 8.436258, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2745,11 +2588,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1413579935
 Animator:
   serializedVersion: 5
@@ -2778,7 +2623,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413579932}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2883,7 +2728,7 @@ GameObject:
   - component: {fileID: 1434358747}
   m_Layer: 0
   m_Name: DownTurret1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2922,11 +2767,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1434358748
 Animator:
   serializedVersion: 5
@@ -2955,7 +2802,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434358745}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3060,7 +2907,7 @@ GameObject:
   - component: {fileID: 1452773178}
   m_Layer: 0
   m_Name: DownTurret7
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3099,11 +2946,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1452773179
 Animator:
   serializedVersion: 5
@@ -3132,7 +2981,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452773176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3237,7 +3086,7 @@ GameObject:
   - component: {fileID: 1490586238}
   m_Layer: 0
   m_Name: UpTurret2
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3276,11 +3125,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1490586239
 Animator:
   serializedVersion: 5
@@ -3309,7 +3160,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490586236}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3438,11 +3289,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1507805218
 Animator:
   serializedVersion: 5
@@ -3471,7 +3324,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507805216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3591,7 +3444,7 @@ GameObject:
   - component: {fileID: 1534540421}
   m_Layer: 0
   m_Name: RightTurret4
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3630,11 +3483,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1534540422
 Animator:
   serializedVersion: 5
@@ -3663,7 +3518,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1534540419}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -3768,7 +3623,7 @@ GameObject:
   - component: {fileID: 1572628994}
   m_Layer: 0
   m_Name: UpTurret5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3782,7 +3637,7 @@ Transform:
   m_GameObject: {fileID: 1572628992}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.436258, y: 4.6782165, z: -4.1686525}
+  m_LocalPosition: {x: 4.436259, y: 4.6782165, z: -4.1686525}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3807,11 +3662,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1572628995
 Animator:
   serializedVersion: 5
@@ -3840,7 +3697,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572628992}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -4015,7 +3872,7 @@ GameObject:
   - component: {fileID: 1720321807}
   m_Layer: 0
   m_Name: UpTurret1
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4054,11 +3911,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1720321808
 Animator:
   serializedVersion: 5
@@ -4087,7 +3946,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1720321805}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -4177,211 +4036,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1742306564
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1742306570}
-  - component: {fileID: 1742306569}
-  - component: {fileID: 1742306568}
-  - component: {fileID: 1742306567}
-  - component: {fileID: 1742306566}
-  - component: {fileID: 1742306565}
-  m_Layer: 0
-  m_Name: Boss4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1742306565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21e4b7af8ccfc53409c2b60883e13b97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RB: {fileID: 1742306567}
-  Body: {fileID: 1742306569}
-  Coll: {fileID: 0}
-  Anim: {fileID: 1742306566}
-  Health: 0
-  Speed: 5
-  SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
-  ShootGnome: {fileID: 0}
-  DeathGnome: {fileID: 0}
-  Damage: 1
---- !u!95 &1742306566
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aae4dd2ea2546694bb86f5dd8d2d9655, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!50 &1742306567
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1000000
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!61 &1742306568
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &1742306569
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!4 &1742306570
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1742306564}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1785395686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4421,11 +4075,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &1785395688
 Animator:
   serializedVersion: 5
@@ -4454,7 +4110,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1785395686}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -4599,11 +4255,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 2390409369395080432, guid: bb60d754354f7724f9934a044678b7f1, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 1
 --- !u!95 &1965605539
 Animator:
   serializedVersion: 5
@@ -4840,7 +4498,7 @@ GameObject:
   - component: {fileID: 2070215273}
   m_Layer: 0
   m_Name: RightTurret3
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4879,11 +4537,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &2070215274
 Animator:
   serializedVersion: 5
@@ -4912,7 +4572,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070215271}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -5017,7 +4677,7 @@ GameObject:
   - component: {fileID: 2089066704}
   m_Layer: 0
   m_Name: DownTurret5
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5056,11 +4716,13 @@ MonoBehaviour:
   Health: 0
   Speed: 5
   SpinSpeed: 5
-  DefaultProjectile: {fileID: 3385520667200393095, guid: fbbe44e8106a16f4b8f7d60f6b90291f, type: 3}
-  ALtProjectiles: []
+  DefaultProjectile: {fileID: 3385520667200393095, guid: 10b6f737018094345872902e28c8d633, type: 3}
+  AltProjectiles: []
   ShootGnome: {fileID: 0}
+  HurtGnome: {fileID: 0}
   DeathGnome: {fileID: 0}
   Damage: 1
+  WallHit: 0
 --- !u!95 &2089066705
 Animator:
   serializedVersion: 5
@@ -5089,7 +4751,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2089066702}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -5188,8 +4850,6 @@ SceneRoots:
   - {fileID: 950884159}
   - {fileID: 1965605543}
   - {fileID: 399969660}
-  - {fileID: 70618677}
-  - {fileID: 1742306570}
   - {fileID: 1661827503}
   - {fileID: 1615071216}
   - {fileID: 517580859}

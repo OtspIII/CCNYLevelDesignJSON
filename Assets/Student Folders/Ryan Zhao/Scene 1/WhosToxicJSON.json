@@ -3,24 +3,666 @@
   "Title": "Who's Toxic ? It's You!",
   "Author": "Moona Hoshinova",
   "Events": [
-
-    {"Time": 0.7,"Who":"Boss1","Action": "MoveRight", "Amt": 10},
-    {"Time": 0.7,"Who":"Boss2","Action": "MoveRight", "Amt": 21},
-
     {"Time": 1,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 1,"Who":"RightTurret1","Action": "ShootAtPlayer"},
+    {"Time": 1.5,"Who":"LeftTurret2","Action": "ShootAtPlayer"},
+    {"Time": 1.5,"Who":"RightTurret2","Action": "ShootAtPlayer"},
+    {"Time": 2,"Who":"LeftTurret3","Action": "ShootAtPlayer"},
+    {"Time": 2,"Who":"RightTurret3","Action": "ShootAtPlayer"},
+    {"Time": 2.5,"Who":"LeftTurret4","Action": "ShootAtPlayer"},
+    {"Time": 2.5,"Who":"RightTurret4","Action": "ShootAtPlayer"},
 
-    {"Time": 1.7,"Who":"Boss1","Anim": "SpinShoot"},
+    {"Time": 3,"Who":"Boss1","Action": "MoveRight", "Amt": 10},
+    {"Time": 3,"Who":"Boss2","Action": "MoveRight", "Amt": 21},
 
-    {"Time": 4.8,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 4.1,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 4.1,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 4.7,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 4.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 6.5,"Who":"UpTurret7","Action": "ShootAtPlayer"},
+
+    {"Time": 6.6,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 6.6,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
+    {"Time": 6.6,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 6.6,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
+
+
+    {"Time": 7,"Who":"UpTurret6","Action": "ShootAtPlayer"},
+    {"Time": 7.5,"Who":"UpTurret5","Action": "ShootAtPlayer"},
+    {"Time": 8,"Who":"UpTurret4","Action": "ShootAtPlayer"},
+    {"Time": 8.5,"Who":"UpTurret3","Action": "ShootAtPlayer"},
+    {"Time": 9,"Who":"UpTurret2","Action": "ShootAtPlayer"},
+    {"Time": 9.5,"Who":"UpTurret1","Action": "ShootAtPlayer"},
+
+    {"Time": 10,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
+    {"Time": 10,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+
+    {"Time": 10,"Who":"LeftTurret1","Action": "ShootAtPlayer"},
+    {"Time": 10.5,"Who":"LeftTurret2","Action": "ShootAtPlayer"},
+    {"Time": 11,"Who":"LeftTurret3","Action": "ShootAtPlayer"},
+    {"Time": 11.5,"Who":"LeftTurret4","Action": "ShootAtPlayer"},
+    {"Time": 12,"Who":"DownTurret1","Action": "ShootAtPlayer"},
+    {"Time": 12.5,"Who":"DownTurret2","Action": "ShootAtPlayer"},
+
+    {"Time": 12.5,"Who":"Boss1", "Action": "MoveToX", "Amt": 6},
+    {"Time": 12.5,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
+    {"Time": 12.5,"Who":"Boss2", "Action": "MoveToX", "Amt": -6},
+    {"Time": 12.5,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
+
+    {"Time": 13,"Who":"DownTurret3","Action": "ShootAtPlayer"},
+    {"Time": 13.5,"Who":"DownTurret4","Action": "ShootAtPlayer"},
+    {"Time": 14,"Who":"DownTurret5","Action": "ShootAtPlayer"},
+    {"Time": 14.5,"Who":"DownTurret6","Action": "ShootAtPlayer"},
+    {"Time": 15,"Who":"DownTurret7","Action": "ShootAtPlayer"},
+    {"Time": 15.5,"Who":"RightTurret4","Action": "ShootAtPlayer"},
+    {"Time": 16,"Who":"RightTurret3","Action": "ShootAtPlayer"},
+
+    {"Time": 16.2,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 16.2,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 16.8,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 16.8,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 19,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 19,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
+    {"Time": 19,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 19,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+
+    {"Time": 21,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
+    {"Time": 21,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
+
+    {"Time": 25,"Who":"Boss1", "Action": "MoveToX", "Amt": -2},
+    {"Time": 25,"Who":"Boss1", "Action": "MoveToY", "Amt": -2.5},
+    {"Time": 25,"Who":"Boss2", "Action": "MoveToX", "Amt": 2},
+    {"Time": 25,"Who":"Boss2", "Action": "MoveToY", "Amt": -2.5},
+
+    {"Time": 27,"Who":"Boss1", "Action": "MoveToX", "Amt": -2},
+    {"Time": 27,"Who":"Boss1", "Action": "MoveToY", "Amt": 2.5},
+    {"Time": 27,"Who":"Boss2", "Action": "MoveToX", "Amt": 2},
+    {"Time": 27,"Who":"Boss2", "Action": "MoveToY", "Amt": 2.5},
+
+    {"Time": 28.3,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 28.9,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 28.9,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 29.5,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 29.5,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 30.1,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 30.1,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 31.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 31.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 31.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 31.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+
+    {"Time": 35.7,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 36.3,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 38.8,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 39.4,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 42.3,"Who":"Boss1", "Action": "LerpToX", "Amt": 0},
+    {"Time": 42.3,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 42.3,"Who":"Boss2", "Action": "LerpToX", "Amt": 0},
+    {"Time": 42.3,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+
+    {"Time": 43.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 43.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 1},
+    {"Time": 43.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 43.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 1},
+
+    {"Time": 45.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 45.2,"Who":"Boss1", "Action": "LerpToY", "Amt": -2},
+    {"Time": 45.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 45.2,"Who":"Boss2", "Action": "LerpToY", "Amt": -2},
+
+    {"Time": 46.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 46.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 47.6,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 48.2,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 50.6,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 51.2,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 54.3,"Who":"Boss1", "Action": "LerpToX", "Amt": -2},
+    {"Time": 54.3,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 54.3,"Who":"Boss2", "Action": "LerpToX", "Amt": 2},
+    {"Time": 54.3,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 55,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 55,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 55,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 55,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
     
-    {"Time": 4.1,"Who":"Boss1", "Action": "SetSpeed", "Amt": 15},
-    {"Time": 4.4,"Who":"Boss1", "Action": "MoveToPlayer"},
-    {"Time": 4.1,"Who":"Boss2", "Action": "SetSpeed", "Amt": 15},
-    {"Time": 4.4,"Who":"Boss2", "Action": "MoveToPlayer"},
+    {"Time": 57,"Who":"Boss1", "Action": "LerpToX", "Amt": -2},
+    {"Time": 57,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 57,"Who":"Boss2", "Action": "LerpToX", "Amt": 2},
+    {"Time": 57,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
 
-    {"Time": 8,"Dialogue": "Hello"},
-    {"Time": 8,"Who":"Player","Action": "Flash"},
-    {"Time": 10,"Dialogue": ""},
+    {"Time": 59.9,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 59.9,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 60.5,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 60.5,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 62.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 62.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 62.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 62.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 62.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 62.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 62.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 62.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 63.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 63.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 63.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 63.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 63.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 63.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 63.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 63.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 64.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 64.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 64.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 64.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 64.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 64.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 64.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 64.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+    
+    {"Time": 65.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 65.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 65.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 65.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 65.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 65.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 65.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 65.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 66.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 66.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 66.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 66.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 66.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 66.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 66.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 66.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 67.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 67.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 67.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 67.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 67.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 67.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 67.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 67.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 68.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 68.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 68.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 68.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 68.5,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 69.1,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 70.1,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 70.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 71.6,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 71.6,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 72.2,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 72.2,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 74.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 74.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 74.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 74.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 74.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 4},
+    {"Time": 74.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 74.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 74.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 75.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 75.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 75.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 75.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 75.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 4},
+    {"Time": 75.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 75.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 75.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 76.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 76.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 76.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 76.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 76.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 4},
+    {"Time": 76.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 76.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 76.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 77.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 77.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 77.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 77.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 77.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 4},
+    {"Time": 77.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 77.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 77.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 78.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 78.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 78.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 78.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 78.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 4},
+    {"Time": 78.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 78.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 4},
+    {"Time": 78.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 79.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -4},
+    {"Time": 79.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 79.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -4},
+    {"Time": 79.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 80.5,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 80.5,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 81.1,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 81.1,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 82.1,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 82.1,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 82.7,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 82.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 83.6,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 83.6,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 84.2,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 84.2,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 86.2,"Who":"Boss1", "Action": "MoveToX", "Amt": -2},
+    {"Time": 86.2,"Who":"Boss1", "Action": "MoveToY", "Amt": -2.5},
+    {"Time": 86.2,"Who":"Boss2", "Action": "MoveToX", "Amt": 2},
+    {"Time": 86.2,"Who":"Boss2", "Action": "MoveToY", "Amt": -2.5},
+
+    {"Time": 88.2,"Who":"Boss1", "Action": "MoveToX", "Amt": -2},
+    {"Time": 88.2,"Who":"Boss1", "Action": "MoveToY", "Amt": 2.5},
+    {"Time": 88.2,"Who":"Boss2", "Action": "MoveToX", "Amt": 2},
+    {"Time": 88.2,"Who":"Boss2", "Action": "MoveToY", "Amt": 2.5},
+
+    {"Time": 89.9,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 90.5,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 90.5,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 91.1,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 91.1,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 91.7,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 91.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 92.3,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 92.3,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 92.3,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 92.3,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+
+    {"Time": 97.3,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 97.9,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 100.4,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 101,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 103.6,"Who":"Boss1", "Action": "LerpToX", "Amt": 0},
+    {"Time": 103.6,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 103.6,"Who":"Boss2", "Action": "LerpToX", "Amt": 0},
+    {"Time": 103.6,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+
+    {"Time": 105.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 105.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 1},
+    {"Time": 105.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 105.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 1},
+
+    {"Time": 106.5,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 106.5,"Who":"Boss1", "Action": "LerpToY", "Amt": -2},
+    {"Time": 106.5,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 106.5,"Who":"Boss2", "Action": "LerpToY", "Amt": -2},
+
+    {"Time": 108.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 108.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 109.3,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 109.3,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 109.9,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 109.9,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 112.2,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 112.2,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 112.8,"Who":"Boss1", "Action": "VelPlayer", "Amt": 15},
+    {"Time": 112.8,"Who":"Boss2", "Action": "VelPlayer", "Amt": 15},
+
+    {"Time": 115.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -2},
+    {"Time": 115.7,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 115.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 2},
+    {"Time": 115.7,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 116.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -6},
+    {"Time": 116.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 116.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 6},
+    {"Time": 116.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+    
+    {"Time": 118.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -2},
+    {"Time": 118.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 118.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 2},
+    {"Time": 118.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 120.8,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 120.8,"Who":"Boss1", "Action": "MoveToY", "Amt": 0},
+    {"Time": 120.8,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 120.8,"Who":"Boss2", "Action": "MoveToY", "Amt": 0},
+
+    {"Time": 124.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 124.7,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 124.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 124.7,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 127.7,"Who":"Boss1", "Action": "MoveToX", "Amt": -3},
+    {"Time": 127.7,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
+    {"Time": 127.7,"Who":"Boss2", "Action": "MoveToX", "Amt": 3},
+    {"Time": 127.7,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+
+    {"Time": 130.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -5},
+    {"Time": 130.7,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 130.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 5},
+    {"Time": 130.7,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+
+    {"Time": 132.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -5},
+    {"Time": 132.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 132.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 5},
+    {"Time": 132.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 132.6,"Who":"Boss1", "Action": "LerpToX", "Amt": -5},
+    {"Time": 132.6,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 132.6,"Who":"Boss2", "Action": "LerpToX", "Amt": 5},
+    {"Time": 132.6,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 133,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 133,"Who":"Boss1", "Action": "MoveToY", "Amt": 0},
+    {"Time": 133,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 133,"Who":"Boss2", "Action": "MoveToY", "Amt": 0},
+
+    {"Time": 133.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -5},
+    {"Time": 133.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 1.5},
+    {"Time": 133.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 5},
+    {"Time": 133.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 1.5},
+
+    {"Time": 135.2,"Who":"Boss1", "Action": "LerpToX", "Amt": -5.5},
+    {"Time": 135.2,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 135.2,"Who":"Boss2", "Action": "LerpToX", "Amt": 5.5},
+    {"Time": 135.2,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 136.2,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 136.2,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 136.8,"Who":"Boss1", "Action": "VelPlayer", "Amt": 5},
+    {"Time": 136.8,"Who":"Boss2", "Action": "VelPlayer", "Amt": 5},
+
+    {"Time": 139.3,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 139.3,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
+    {"Time": 139.3,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 139.3,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+    
+    {"Time": 141,"Who":"Boss1", "Action": "MoveToX", "Amt": 6},
+    {"Time": 141,"Who":"Boss1", "Action": "MoveToY", "Amt": -3},
+    {"Time": 141,"Who":"Boss2", "Action": "MoveToX", "Amt": -6},
+    {"Time": 141,"Who":"Boss2", "Action": "MoveToY", "Amt": -3},
+
+    {"Time": 143,"Who":"Boss1", "Action": "MoveToX", "Amt": -3},
+    {"Time": 143,"Who":"Boss1", "Action": "MoveToY", "Amt": -1},
+    {"Time": 143,"Who":"Boss2", "Action": "MoveToX", "Amt": 3},
+    {"Time": 143,"Who":"Boss2", "Action": "MoveToY", "Amt": -1},
+
+    {"Time": 144.2,"Who":"Boss1", "Action": "MoveToX", "Amt": -4},
+    {"Time": 144.2,"Who":"Boss1", "Action": "MoveToY", "Amt": 1},
+    {"Time": 144.2,"Who":"Boss2", "Action": "MoveToX", "Amt": 4},
+    {"Time": 144.2,"Who":"Boss2", "Action": "MoveToY", "Amt": 1},
+
+    {"Time": 145.7,"Who":"Boss1", "Action": "MoveToX", "Amt": -4.5},
+    {"Time": 145.7,"Who":"Boss1", "Action": "MoveToY", "Amt": -1.5},
+    {"Time": 145.7,"Who":"Boss2", "Action": "MoveToX", "Amt": 4.5},
+    {"Time": 145.7,"Who":"Boss2", "Action": "MoveToY", "Amt": -1.5},
+
+    {"Time": 147.4,"Who":"Boss1", "Action": "MoveToX", "Amt": -6},
+    {"Time": 147.4,"Who":"Boss1", "Action": "MoveToY", "Amt": 3},
+    {"Time": 147.4,"Who":"Boss2", "Action": "MoveToX", "Amt": 6},
+    {"Time": 147.4,"Who":"Boss2", "Action": "MoveToY", "Amt": 3},
+
+    {"Time": 148.3,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 148.3,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 148.9,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 148.9,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
+
+    {"Time": 151.2,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 151.2,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 151.8,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 151.8,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
+    
+    {"Time": 154.7,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 154.7,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 154.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 154.7,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},  
+
+    {"Time": 156.3,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 156.3,"Who":"Boss1", "Action": "LerpToY", "Amt": 0},
+    {"Time": 156.3,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 156.3,"Who":"Boss2", "Action": "LerpToY", "Amt": 0},
+    
+    {"Time": 157.7,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 157.7,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 157.7,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 157.7,"Who":"Boss2", "Action": "LerpToY", "Amt": -3}, 
+
+    {"Time": 160.4,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 160.4,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 161,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 161,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
+    
+    {"Time": 161.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 161.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 161.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 161.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 162.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 162.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 162.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 162.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 162.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 162.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 162.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 162.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 163.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 163.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 163.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 163.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 163.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 163.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 163.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 163.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 164.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 164.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 164.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 164.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 164.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 164.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 164.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 164.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 165.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 165.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 165.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 165.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 165.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 165.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 165.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 165.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 166.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 166.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 166.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 166.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 166.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 166.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 166.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 166.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 167.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 167.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 167.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -2},
+    {"Time": 167.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 167.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 167.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 167.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 167.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 168.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -2},
+    {"Time": 168.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 168.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 2},
+    {"Time": 168.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 168.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 168.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 168.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 168.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 169.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 169.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 169.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 169.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 169.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 169.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 169.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 169.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 170.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 170.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 170.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 170.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 170.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 170.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 170.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 170.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 171.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 171.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 171.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 171.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 171.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 171.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 171.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 171.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 172.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 172.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 172.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 172.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 172.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 172.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 172.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 172.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 173.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 173.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 173.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 173.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 173.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 173.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 173.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 173.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 174.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 174.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 174.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 174.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+
+    {"Time": 174.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 174.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 174.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 174.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 175.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 175.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 175.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 175.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 175.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 175.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 175.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 175.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 176.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 176.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 176.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 176.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 176.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 176.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 176.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 176.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 177.4,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 177.4,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 177.4,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 177.4,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 177.9,"Who":"Boss1", "Action": "LerpToX", "Amt": 3},
+    {"Time": 177.9,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 177.9,"Who":"Boss2", "Action": "LerpToX", "Amt": -3},
+    {"Time": 177.9,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 178.4,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 178.4,"Who":"Boss1", "Action": "LerpToY", "Amt": -3},
+    {"Time": 178.4,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 178.4,"Who":"Boss2", "Action": "LerpToY", "Amt": 3},
+    
+    {"Time": 178.9,"Who":"Boss1", "Action": "LerpToX", "Amt": -3},
+    {"Time": 178.9,"Who":"Boss1", "Action": "LerpToY", "Amt": 3},
+    {"Time": 178.9,"Who":"Boss2", "Action": "LerpToX", "Amt": 3},
+    {"Time": 178.9,"Who":"Boss2", "Action": "LerpToY", "Amt": -3},
+
+    {"Time": 179.5,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 179.5,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 180.1,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 180.1,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
+
+    {"Time": 181.7,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 181.7,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
+    
+    {"Time": 184.5,"Who":"Boss1", "Action": "Shake"},
+    {"Time": 184.5,"Who":"Boss2", "Action": "Shake"},
+    {"Time": 185.1,"Who":"Boss1", "Action": "VelPlayer", "Amt": 20},
+    {"Time": 185.1,"Who":"Boss2", "Action": "VelPlayer", "Amt": 20},
 
     {"Time": 186}
   ]

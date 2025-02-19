@@ -198,6 +198,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 6248122364153474714, guid: 297337128a5b7fd4083aad5e36203aba, type: 3}
+      propertyPath: Health
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 6517487089898744776, guid: 297337128a5b7fd4083aad5e36203aba, type: 3}
       propertyPath: m_Name
       value: Player
@@ -672,6 +676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MainNPC: {fileID: 1903488663}
+  SideNPCs: []
   JSON: {fileID: 4900000, guid: b47ea307f9380bc428f392d5358ed2cd, type: 3}
   HealthDisplay: {fileID: 6793645111945979336}
   DialogueDisplay: {fileID: 6793645111945979335}
